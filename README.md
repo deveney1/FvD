@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="images/Shop-pagina.png" width="375px" alt="Shop pagina Soilmates">
+  <img src="images/pagina-duurzaamheid.png" width="375px" alt="Shop pagina Soilmates">
  
 </details>
 
