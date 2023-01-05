@@ -11,20 +11,34 @@ button, summary {
 
 
 
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text-p:#222222;
+	--color-text-button-header:#000000CC;
+	--color-text-h2:#189189;
+	--color-background:#F3F0E3;
+	--color-background-section:#f3efe3;
+	--color-background-footer:#FFFFFF;
+	--color-background-header:#FFFFFF;
+
+	--color-background-menu:#F0F0F0;
+
+	--color-background-aside:#86C1BE;
+	--color-button-text:#189189;
+	--color-footer-link:#D24E09;
+	--color-footer-nav:#CC3366;	
+	--color-footer-adres:#F7874a;
+
+	--color-section-two:#ECAA8A;
+	--color-section-two-three:#88C9B1;
+	
+
+
+
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -32,3 +46,148 @@ button, summary {
 
 /* jouw code */
 
+body {
+	background-color: var(--color-background-section);
+}
+
+
+/****************/
+/* Main - eerste section */
+/****************/
+
+section:first-of-type {
+	background-color:var(--color-background-section);
+	/* padding: 1.8em 0em 1.2em 0.6em; */
+	padding: 0;
+}
+
+section:first-of-type > h2 {
+	color:var(--color-text-h2);
+	text-transform: uppercase;
+	font-size: 1em;
+	padding-left: .7em;
+}
+
+section:first-of-type > p {
+	font-size: 0.8em;
+	color:var(--color-text-p);
+	font-weight:lighter;
+	padding-left: .8em;
+}
+
+section:first-of-type > img {
+	width: 23.438em;
+	height: 19.375em;
+	object-fit: cover;
+	margin: 0em;
+}
+
+section:first-of-type > a > img {
+	width: 4.5em;
+	height: 4.5em;
+
+}
+
+
+/* ****** Grid eerste section ******* */
+
+
+section:first-of-type {
+	display: grid;
+	grid-template-rows: max-content;
+	position: relative;
+}
+
+section:first-of-type > img {
+	grid-row-start: 1;
+}
+
+
+
+/* ****** Position eerste section ******* */
+
+section:first-of-type > a > img {
+	position: absolute;
+	left: .5em;
+	top: 8em;
+}
+
+
+
+/****************/
+/* Main - tweede section */
+/****************/
+
+section:nth-of-type(2) {
+	
+}
+
+
+section:nth-of-type(2) > h2 {
+	font-size: 0;
+	width: 1px;
+	height: 1px;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute!important;
+	border: 0!important;
+	padding: 0!important;
+	margin: 0!important;
+	clip: rect(1px,1px,1px,1px);
+}
+
+section:nth-of-type(2) > ul {
+list-style: none;
+padding: 0;
+}
+
+section:nth-of-type(2) > ul > li:first-of-type {
+	background-color:var(--color-section-two);
+
+}
+
+section:nth-of-type(2) > ul > li > p {
+
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+	height: 15em;
+
+}
+
+section:nth-of-type(2) > ul > li > img {
+	width: 23.438em;
+	height: 39.5em;
+	object-fit: cover;
+	margin-left: 0;
+
+}
+
+section:nth-of-type(2) > ul > li > a {
+
+	font-size: 1.25em;
+	text-align: center;
+	color: var(--color-button-text);
+	text-decoration: none;
+	margin: 0;
+	border-style: solid;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	padding-left: .8em;
+	padding-right: .8em;
+	border-radius: 0.3em;
+
+}
+
+section:nth-of-type(2) > ul > li:nth-of-type(2) {
+	background-color: var(--color-section-two-three);
+
+}
+
+
+/* ****** Grid tweede section ******* */
+
+
+section:nth-of-type(2) {
+	
+}

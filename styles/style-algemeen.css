@@ -9,17 +9,32 @@ button, summary {
 	cursor: pointer;
 }
 
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text-p:#222222;
+	--color-text-button-header:#000000CC;
+	--color-text-h2:#189189;
+	--color-background:#F3F0E3;
+	--color-background-section:#f3efe3;
+	--color-background-footer:#FFFFFF;
+	--color-background-header:#FFFFFF;
+
+	--color-background-menu:#F0F0F0;
+
+	--color-background-aside:#86C1BE;
+	--color-button-text:#189189;
+	--color-footer-link:#D24E09;
+	--color-footer-nav:#CC3366;	
+	--color-footer-adres:#F7874a;
+	
+
+
+
 }
 
 
@@ -31,6 +46,136 @@ button, summary {
 /****************/
 
 /* jouw code */
+
+body {
+	margin: 0;
+}
+	
+
+h1 {
+		font-size: 0;
+		width: 1px;
+		height: 1px;
+		display: inline-block;
+		overflow: hidden;
+		position: absolute!important;
+		border: 0!important;
+		padding: 0!important;
+		margin: 0!important;
+		clip: rect(1px,1px,1px,1px);
+}
+
+h2 {
+ font-family: 'Roboto mono';}
+
+h3 {
+	font-family: 'Roboto mono';
+} 
+
+h4 {
+	font-family: 'Roboto mono';
+} 
+
+p {
+	font-family: 'Roboto mono';
+} 
+
+a {
+	font-family: 'Roboto mono';
+} 
+
+
+/****************/
+/* header */
+/****************/
+
+header {
+background-color:var(--color-background-header);
+display: flex;
+justify-content: space-between;	
+padding-top:1em;
+padding-bottom: 1em;;
+padding-left: .5em;
+padding-right: .5em;
+}
+
+header nav:first-of-type {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color: var(--color-background-menu);
+	width: 10em;
+	height: 10em;
+	transform:translateY(-100%);
+	transition:.5s;
+	
+}
+
+header nav:first-of-type.open {
+	transform:translateY(0%);
+	width: 10em;
+	height: 10em;
+	Z-index:100; 
+}
+
+header nav button:first-of-type {
+}
+
+header > a img {
+	width: 8em;
+	height: 1.6em;
+}
+
+header > button {
+	background-color: white;
+	border: none;
+	/* padding: 0.5em 0.75em; */
+	order:0;
+	
+}
+
+header > button > img {
+	width: 1em;
+	height: 1em;
+	
+}
+
+header > nav > ul {
+	background-color: var(--color-background-menu);
+	list-style: none;
+}
+
+header > nav > button > img{
+	width: 1em;
+	height: 1em;
+	
+}
+
+header > nav > button {
+	background-color: white;
+	border-style: none;
+}
+
+
+header > nav > a:nth-of-type(2) {
+	border-style: solid;
+	width: 4.8em;
+	height: 2.5em;
+	padding: 0.4em;
+	border-color: var(--color-text-p);
+	border-radius: 0.3em;
+
+	font-size: 0.8em;
+
+}
+
+header > nav  > a > img {
+	width: 1em;
+	height: 1em;
+
+} 
 
 
 
