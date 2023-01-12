@@ -20,6 +20,25 @@ button, summary {
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+
+	--color-text-p:#222222;
+	--color-text-button-header:#000000CC;
+	--color-text-h2:#189189;
+	--color-background:#F3F0E3;
+	--color-background-section:#f3efe3;
+	--color-background-footer:#FFFFFF;
+	--color-background-header:#FFFFFF;
+
+	--color-background-menu:#F0F0F0;
+
+	--color-background-aside:#86C1BE;
+	--color-button-text:#189189;
+	--color-footer-link:#D24E09;
+	--color-footer-nav:#CC3366;	
+	--color-footer-adres:#F7874a;
+
+	--color-section-two:#ECAA8A;
+	--color-section-two-three:#88C9B1;
 }
 
 
@@ -32,3 +51,12 @@ button, summary {
 
 /* jouw code */
 
+body {
+	background-color: var(--color-background-section);
+	position: relative;
+	
+}
+
+main {
+	position: relative;
+}

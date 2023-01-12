@@ -200,6 +200,7 @@ section:nth-of-type(2) > ul > li > a {
 
 }
 
+/* Hoe kan ik dit fixen? Heb nu position gebruikt. */
 
 section:nth-of-type(2) > ul > li:first-of-type > a {
 	position: absolute;
@@ -215,6 +216,7 @@ section:nth-of-type(2) > ul > li:first-of-type > a {
 		
 		}
 
+/* Hoe kan ik dit fixen? Heb nu position gebruikt. */
 
 section:nth-of-type(2) > ul > li:nth-of-type(2) {
 	background-color: var(--color-section-two-three);
